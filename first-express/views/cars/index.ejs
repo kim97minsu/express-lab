@@ -1,0 +1,13 @@
+<body>
+  <h1>Japanese Automobiles</h1>
+  <ul>
+    <% cars.forEach(function(c) { %>
+      <li>
+        <%= c.make%>
+        <%= c.model%>
+          - 
+        <%= c.isHybrid ? 'hybrid' : 'non hybrid' %>
+      </li>
+    <% }); %>
+  </ul>
+</body>
